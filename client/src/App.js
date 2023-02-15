@@ -1,8 +1,10 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import SearchBooks from './pages/SearchBooks';
-import SavedBooks from './pages/SavedBooks';
-import Navbar from './components/Navbar';
+// todo: Create an Apollo Provider to make every request work with the Apollo Server.
+
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import SearchBooks from "./pages/SearchBooks";
+import SavedBooks from "./pages/SavedBooks";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
@@ -10,17 +12,11 @@ function App() {
       <>
         <Navbar />
         <Routes>
-          <Route 
-            path='/' 
-            element={<SearchBooks />} 
-          />
-          <Route 
-            path='/saved' 
-            element={<SavedBooks />} 
-          />
-          <Route 
-            path='*'
-            element={<h1 className='display-2'>Wrong page!</h1>}
+          <Route path="/" element={<SearchBooks />} />
+          <Route path="/saved" element={<SavedBooks />} />
+          <Route
+            path="*"
+            element={<h1 className="display-2">Wrong page!</h1>}
           />
         </Routes>
       </>
