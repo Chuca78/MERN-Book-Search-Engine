@@ -1,4 +1,6 @@
-// todo: create the following mutations
+// todo: create mutations
+
+import gql from "graphql-tag";
 
 // - `LOGIN_USER` will execute the `loginUser` mutation set up using Apollo Server.
 export const LOGIN_USER = gql`
