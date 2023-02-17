@@ -20,7 +20,7 @@ const SignupForm = () => {
   // using the apollo hook  useMutation pass the
   // ADD_USER mutation in order to talk to graphql
   // addUser will hold the output and error the error
-  // eslint-disable-next-line
+
   const [addUser, { error }] = useMutation(ADD_USER);
   // set state for alert
   const [showAlert, setShowAlert] = useState(false);
@@ -42,7 +42,9 @@ const SignupForm = () => {
 
     // try {
     //   const response = await createUser(userFormData);
-
+    if (error) {
+      throw new Error("something went wrong!");
+    }
     // if (!response.ok) {
     //   throw new Error("something went wrong!");
     // }

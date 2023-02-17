@@ -17,7 +17,7 @@ const LoginForm = () => {
   // using the apollo hook  useMutation pass the
   // ADD_USER mutation in order to talk to graphql
   // addUser will hold the output and error the error
-  // eslint-disable-next-line
+
   const [login, { error }] = useMutation(LOGIN_USER);
 
   const handleInputChange = (event) => {
@@ -113,6 +113,7 @@ const LoginForm = () => {
         >
           Submit
         </Button>
+        {error && <div>Login failed</div>}
       </Form>
     </>
   );

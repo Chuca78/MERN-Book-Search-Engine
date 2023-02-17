@@ -21,7 +21,6 @@ import { removeBookId } from "../utils/localStorage";
 const SavedBooks = () => {
   // const [userData, setUserData] = useState({});
   const { loading, data } = useQuery(GET_ME);
-  // eslint-disable-next-line
   const [removeBook, { error }] = useMutation(REMOVE_BOOK);
 
   //debugger
@@ -71,7 +70,9 @@ const SavedBooks = () => {
         variables: { bookId },
       });
       // const response = await deleteBook(bookId, token);
-
+      if (error) {
+        throw new Error("something went wrong!");
+      }
       // if (!response.ok) {
       //   throw new Error("something went wrong!");
       // }
