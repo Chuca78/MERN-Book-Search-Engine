@@ -1,3 +1,4 @@
+require("dotenv").config();
 //  Implement the Apollo Server and apply it to the Express server as middleware.
 const express = require("express");
 const path = require("path");
