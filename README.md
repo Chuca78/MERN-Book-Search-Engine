@@ -44,15 +44,18 @@ npm i
 
 ## Usage
 
-To start the application, please type the following command in the terminal:
+To start the application click the following link: <br>
+https://warm-hamlet-10117.herokuapp.com/
+
+Alternately type the following command in the terminal:
 
 ```
 npm start
 ```
 
-```md
-![alt text](assets/images/screenshot.png)
-```
+Application screenshot:
+
+![MERN Book Search Engine](https://user-images.githubusercontent.com/97859682/221171412-be5aeaa7-c835-4bc1-bf2f-763da0cb1469.png)
 
 ## Credits
 
