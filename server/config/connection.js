@@ -10,7 +10,8 @@ const mongoose = require("mongoose");
 
 // todo: use this the format for the heroku connection to MongoDB
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost:27017/googlebooks",
+  process.env.MONGODB_URI ||
+    "mongodb+srv://Chuca:fvPvm0QBfzh2xRZz@cluster0.jyyymcj.mongodb.net/?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
